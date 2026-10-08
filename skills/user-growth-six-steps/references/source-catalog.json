@@ -1,0 +1,370 @@
+{
+  "schema_version": 1,
+  "status": "draft_pending_four_articles",
+  "as_of": "2026-10-08",
+  "book": {
+    "id": "BOOK-DEDAO",
+    "title": "增长杠杆：探索用户增长的6步法",
+    "author": "卢壮华",
+    "publisher": "清华大学出版社",
+    "isbn": "978-7-302-69329-1",
+    "edition": "2025年7月第1版",
+    "url": "https://www.dedao.cn/ebook/detail?id=VEDA2bKO27MKbRardAGJ1N4ln9BLVwgEge5W8ZQyXmYqg5PpkEjxovze6DB84dpj",
+    "coverage": "第1—7章全部正文、附录和后记已读；部分图表待核；用户32页PDF是节选。"
+  },
+  "counts": {
+    "album_entries": 11,
+    "unique_articles": 10,
+    "duplicates": 1,
+    "body_read": 6,
+    "body_unread": 4
+  },
+  "albums": [
+    {
+      "id": "ALBUM_A",
+      "album_id": "3117819904124796931",
+      "title": "用户增长",
+      "url": "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzA3ODcwOTI2Mg%3D%3D&action=getalbum&album_id=3117819904124796931",
+      "visible_count": 9,
+      "order": "页面倒序（从9至1）",
+      "article_ids": [
+        "WX-A09",
+        "WX-A08",
+        "WX-A07",
+        "WX-A06",
+        "WX-A05",
+        "WX-A04",
+        "WX-A03",
+        "WX-A02",
+        "WX-A01"
+      ]
+    },
+    {
+      "id": "ALBUM_B",
+      "album_id": "3786354353448058886",
+      "title": "增长实践",
+      "url": "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzA3ODcwOTI2Mg%3D%3D&action=getalbum&album_id=3786354353448058886",
+      "visible_count": 2,
+      "order": "页面倒序（从2至1）",
+      "article_ids": [
+        "WX-A10",
+        "WX-A05"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "WX-A01",
+      "title": "鹅厂人的用户增长方法论与实践",
+      "date": "2023-09-23",
+      "author": "三白有话说",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA3ODcwOTI2Mg==&mid=2455510186&idx=1&sn=a30ccc312b937bdbd6efbc3082da2406",
+      "memberships": [
+        {
+          "album_id": "ALBUM_A",
+          "position": 1
+        }
+      ],
+      "reading": {
+        "body": "unread",
+        "images": "unread",
+        "body_coverage": null,
+        "image_coverage": null,
+        "reader": null,
+        "read_at": null
+      },
+      "limits": [
+        "仅核验目录标题、日期和文章链接身份；未据标题推断正文方法。"
+      ]
+    },
+    {
+      "id": "WX-A02",
+      "title": "如何建设用户增长团队",
+      "date": "2024-02-22",
+      "author": "三白有话说",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA3ODcwOTI2Mg==&mid=2455510760&idx=1&sn=b996a2a67fa818dadbf1ccc3fda97355",
+      "memberships": [
+        {
+          "album_id": "ALBUM_A",
+          "position": 2
+        }
+      ],
+      "reading": {
+        "body": "unread",
+        "images": "unread",
+        "body_coverage": null,
+        "image_coverage": null,
+        "reader": null,
+        "read_at": null
+      },
+      "limits": [
+        "仅核验目录标题、日期和文章链接身份；未据标题推断正文方法。"
+      ]
+    },
+    {
+      "id": "WX-A03",
+      "title": "如何建设用户增长数据指标体系？",
+      "date": "2024-11-11",
+      "author": "三白有话说",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA3ODcwOTI2Mg==&mid=2455511209&idx=1&sn=698065fcae672f140ddeb037d6e4e955",
+      "memberships": [
+        {
+          "album_id": "ALBUM_A",
+          "position": 3
+        }
+      ],
+      "reading": {
+        "body": "unread",
+        "images": "unread",
+        "body_coverage": null,
+        "image_coverage": null,
+        "reader": null,
+        "read_at": null
+      },
+      "limits": [
+        "仅核验目录标题、日期和文章链接身份；未据标题推断正文方法。"
+      ]
+    },
+    {
+      "id": "WX-A04",
+      "title": "深度讲解「AB实验」",
+      "date": "2024-11-27",
+      "author": "三白有话说",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA3ODcwOTI2Mg==&mid=2455511232&idx=1&sn=3500c64cb947e1f96c16918ee4dbf78a",
+      "memberships": [
+        {
+          "album_id": "ALBUM_A",
+          "position": 4
+        }
+      ],
+      "reading": {
+        "body": "unread",
+        "images": "unread",
+        "body_coverage": null,
+        "image_coverage": null,
+        "reader": null,
+        "read_at": null
+      },
+      "limits": [
+        "仅核验目录标题、日期和文章链接身份；未据标题推断正文方法。"
+      ]
+    },
+    {
+      "id": "WX-A05",
+      "title": "用户增长6步法：我的AI创业增长实践",
+      "date": "2024-12-27",
+      "author": "三白有话说",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA3ODcwOTI2Mg==&mid=2455511287&idx=1&sn=79c35e0c51d8b6fcdb475067c9bac2e3",
+      "memberships": [
+        {
+          "album_id": "ALBUM_A",
+          "position": 5
+        },
+        {
+          "album_id": "ALBUM_B",
+          "position": 1
+        }
+      ],
+      "reading": {
+        "body": "text_read",
+        "images": "2_substantive_images_read_32_unverified",
+        "body_coverage": "full",
+        "image_coverage": {
+          "substantive_total": 34,
+          "substantive_read": 2,
+          "substantive_unverified": 32,
+          "promotional_excluded": 2,
+          "decorative_excluded": 2,
+          "read": [
+            "图12相关性表",
+            "图35结果汇总表"
+          ]
+        },
+        "reader": "browser",
+        "read_at": "2026-10-08"
+      },
+      "limits": [
+        "三幅生成次数/预览比例/上传资料与付费关系图前明确非真实数据，不作可复核实证。",
+        "正文称时间前后比较，图35结果表却明确所有表内效果仅示例非真实；数值统一标作者叙述/示例，不称已核实实测。",
+        "50%到近70%本文称添加参考资料页转化率，图书称付费转化率，保留差异不合并。",
+        "3次及以上已重新核对为生成记录次数，不是上传资料。",
+        "11pm奖励未落地；10—20秒仅部分流式输出；不放大为完整生成时间。",
+        "同文双专辑只计1篇，与书第4章高度同源不作独立重复验证。",
+        "38图含34业务图（图12/35已核2张、32待核）、2装饰、2推广；图12的r/p源于非真实输入，不作真实统计证据。"
+      ]
+    },
+    {
+      "id": "WX-A06",
+      "title": "创业笔记：AI产品广告投流增长复盘",
+      "date": "2025-08-22",
+      "author": "三白有话说",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA3ODcwOTI2Mg==&mid=2455511991&idx=1&sn=4407ca2948af0c7fc2e438289f50b9a9",
+      "memberships": [
+        {
+          "album_id": "ALBUM_A",
+          "position": 6
+        }
+      ],
+      "reading": {
+        "body": "text_read",
+        "images": "unreviewed",
+        "body_coverage": "full",
+        "image_coverage": {
+          "substantive_total": null,
+          "substantive_read": 0,
+          "promotional_excluded": null
+        },
+        "reader": "browser",
+        "read_at": "2026-10-08"
+      },
+      "limits": [
+        "作者历史个人投流案例，成本和转化率非当前平台行情或业务基准。",
+        "30日营收/广告成本是收入回收比，不等于扣除所有成本后的净利润。",
+        "ARPU/CAC须同cohort、同分母、同周期；小程序近似数值不强作恒等。",
+        "小预算结果不线性外推放量；跨端去重归因；APP未上线无自有实证。",
+        "与图书早期无投流是阶段变化；保留负面结果和未决取舍。",
+        "正文全读，图片尚未核验。"
+      ]
+    },
+    {
+      "id": "WX-A07",
+      "title": "增长笔记：广告投流踩过的那些坑",
+      "date": "2025-08-24",
+      "author": "三白有话说",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA3ODcwOTI2Mg==&mid=2455512031&idx=1&sn=c63da5924119fda2750bc3f2d487a6b4",
+      "memberships": [
+        {
+          "album_id": "ALBUM_A",
+          "position": 7
+        }
+      ],
+      "reading": {
+        "body": "text_read",
+        "images": "unreviewed",
+        "body_coverage": "full",
+        "image_coverage": {
+          "substantive_total": null,
+          "substantive_read": 0,
+          "promotional_excluded": null
+        },
+        "reader": "browser",
+        "read_at": "2026-10-08"
+      },
+      "limits": [
+        "作者2025年个体投流经历，不是平台现行官方规则或普遍代理事实。",
+        "费用、版位、素材、时段和自动策略经验不可无条件外推。",
+        "具体平台配置需用户当前后台与官方规则核验；本材料不授权开户、充值或投放花费。",
+        "骚扰/泄露归因和所有代理动机泛化不纳入事实。",
+        "正文全读，图片尚未核验。"
+      ]
+    },
+    {
+      "id": "WX-A08",
+      "title": "增长数据分析框架：如何快速了解新业务？",
+      "date": "2025-08-26",
+      "author": "三白有话说",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA3ODcwOTI2Mg==&mid=2455512062&idx=1&sn=1d4d626b0331e4d311117c9951f9b50a",
+      "memberships": [
+        {
+          "album_id": "ALBUM_A",
+          "position": 8
+        }
+      ],
+      "reading": {
+        "body": "text_read",
+        "images": "1_substantive_image_read_7_unverified",
+        "body_coverage": "full",
+        "image_coverage": {
+          "substantive_total": 8,
+          "substantive_read": 1,
+          "substantive_unverified": 7,
+          "promotional_excluded": 1,
+          "read": [
+            "图1生命周期结构"
+          ],
+          "unverified": [
+            "图0概览",
+            "图2—7章节业务图"
+          ]
+        },
+        "reader": "browser",
+        "read_at": "2026-10-08"
+      },
+      "limits": [
+        "假设在线设计业务的示例数据，不是真实业务事实。",
+        "北极星打开编辑器与后文登录留存不一致；回流率分母为注册，不与其他定义混比。",
+        "渠道/来源/人群占比未闭合不补100%；跨端去重，占比上升不等于净增。",
+        "50%×80%×30%=12%仅在同cohort和分步分母一致时成立。",
+        "正文全读，8张业务图仅图1已核。"
+      ]
+    },
+    {
+      "id": "WX-A09",
+      "title": "Midjourney：用户增长策略拆解案例分析",
+      "date": "2025-10-17",
+      "author": "三白有话说",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA3ODcwOTI2Mg==&mid=2455513390&idx=1&sn=be09385e48b70e6798f5fa6496965ca3",
+      "memberships": [
+        {
+          "album_id": "ALBUM_A",
+          "position": 9
+        }
+      ],
+      "reading": {
+        "body": "text_read",
+        "images": "2_substantive_images_read_1_unverified",
+        "body_coverage": "full",
+        "image_coverage": {
+          "substantive_total": 3,
+          "substantive_read": 2,
+          "substantive_unverified": 1,
+          "promotional_excluded": 1,
+          "unverified": [
+            "图0长总览未逐段核验；导出超时未重试"
+          ]
+        },
+        "reader": "browser",
+        "read_at": "2026-10-08"
+      },
+      "limits": [
+        "最高优先级：全部数据、调研、实验和P值都是虚构教学，不能当作真实Midjourney证据。",
+        "WUSG与U/V满意代理非官方定义，U/V也可能表达不满意后的修改。",
+        "北极星只行为的表述与书第4章商业指标案例冲突，需并列说明。",
+        "ICE乘积I*C*Ease不同于图书示例加法/成本，先明确算法与方向，不混排。",
+        "图0长总览未逐段核验；图1/2已视觉核但仍是虚构。",
+        "示范5次、45%、50/50、14天与所有结果不得移植用户业务或支持全量发布。"
+      ]
+    },
+    {
+      "id": "WX-A10",
+      "title": "使用率从25%提升到42%，一次成功的增长实验",
+      "date": "2025-12-19",
+      "author": "三白有话说",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA3ODcwOTI2Mg==&mid=2455513585&idx=1&sn=0aa7ae88edba39868ffac32f14d7ef0a",
+      "memberships": [
+        {
+          "album_id": "ALBUM_B",
+          "position": 2
+        }
+      ],
+      "reading": {
+        "body": "text_read",
+        "images": "1_substantive_image_read",
+        "body_coverage": "full",
+        "image_coverage": {
+          "substantive_total": 1,
+          "substantive_read": 1,
+          "promotional_excluded": 1
+        },
+        "reader": "browser",
+        "read_at": "2026-10-08"
+      },
+      "limits": [
+        "功能使用率分母和周期未说明。",
+        "25%到42%为作者报告的上线前后观察，无样本、随机分配、对照或不确定区间。",
+        "业务图仅展示2025/12/14—2025/12/18，不能证明长期留存或因果。",
+        "玄学有效性不作为事实；知识星球推广图排除；不递归抓取推荐链接。"
+      ]
+    }
+  ]
+}

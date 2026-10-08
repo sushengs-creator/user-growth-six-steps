@@ -1,0 +1,220 @@
+{
+  "schema_version": 1,
+  "status": "draft",
+  "title": "公开演示｜小店库存工具增长行动草案",
+  "subtitle": "全部业务、数字与反馈均为本文虚构，仅展示报告如何支持判断和行动。",
+  "created_at": "2026-10-08",
+  "subject": "虚构的小店库存管理工具",
+  "summary": "演示输入中，完整7天窗口的80家新注册店铺，有24家完成首次有效盘点，局部激活率为30%。少量反馈提示字段填写难理解，支持优先检查导入流程；尚不能证明这是主要流失原因。本草案先安排体验观察与小范围改进，再以同口径数据验证。业务北极星和魔法数字仍未确认。",
+  "facts": [
+    {
+      "text": "演示产品为小店提供库存管理；本轮只研究首次有效盘点的完成过程。",
+      "source_ids": [
+        "DEMO_INPUT"
+      ]
+    },
+    {
+      "text": "演示队列有80家新注册店铺，各自观察满7天；24家完成有效盘点。",
+      "source_ids": [
+        "DEMO_INPUT"
+      ]
+    },
+    {
+      "text": "演示定义：有效盘点需导入真实货品、录入实际库存并确认盘点结果，每店只计首次完成。",
+      "source_ids": [
+        "DEMO_INPUT"
+      ]
+    },
+    {
+      "text": "演示反馈：5位未完成者中，3位表示导入字段说明不清楚。该反馈不代表全部店铺。",
+      "source_ids": [
+        "DEMO_INPUT"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "text": "更清楚的字段说明和导入预览，可能减少新店铺理解与纠错成本，从而帮助其完成首次有效盘点。",
+      "note": "待验证；没有把反馈写成因果证据。",
+      "source_ids": [
+        "DEMO_INPUT"
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "text": "尚未确认业务北极星与自然使用频率。",
+      "note": "本轮可以先研究首次盘点，不直接把局部激活率升格为北极星。"
+    },
+    {
+      "text": "缺少导入、纠错、确认各环节的同队列计数与事件顺序。",
+      "note": "先复核日志和任务过程，再判断主要瓶颈。"
+    },
+    {
+      "text": "没有行为次数与后续重复使用的关系记录。",
+      "note": "魔法数字保持待求，不借用别的产品参数。"
+    }
+  ],
+  "steps": [
+    {
+      "id": "north_star",
+      "state": "pending",
+      "finding": "本轮未核对业务北极星。",
+      "decision": "7天首次有效盘点率仅作本次局部指标。",
+      "source_ids": [
+        "DEMO_INPUT",
+        "BOOK_METHOD"
+      ]
+    },
+    {
+      "id": "growth_mode",
+      "state": "pending",
+      "finding": "整体增长动力未核对。",
+      "decision": "局部体验研究不依赖先给业务贴模式标签。",
+      "source_ids": [
+        "BOOK_METHOD"
+      ]
+    },
+    {
+      "id": "core_lever",
+      "state": "current",
+      "finding": "字段说明是少量反馈中的候选问题，缺少完整路径证据。",
+      "decision": "先验证理解障碍与导入过程，再决定改动范围。",
+      "source_ids": [
+        "DEMO_INPUT",
+        "BOOK_METHOD"
+      ]
+    },
+    {
+      "id": "magic_number",
+      "state": "blocked",
+      "finding": "没有真实行为阈值证据；演示中的80、24等也不是可迁移阈值。",
+      "decision": "保留待求，后续记录前置行为与后续结果。",
+      "source_ids": [
+        "BOOK_METHOD"
+      ]
+    },
+    {
+      "id": "growth_strategy",
+      "state": "pending",
+      "finding": "已有降低导入理解成本的探索提案。",
+      "decision": "任务观察支持后，再试字段例子与导入预览。",
+      "source_ids": [
+        "BOOK_METHOD"
+      ]
+    },
+    {
+      "id": "ab_validation",
+      "state": "pending",
+      "finding": "尚未运行任何验证。",
+      "decision": "先做任务观察；前后比较只报告观察变化，随机AB需另定设计。",
+      "source_ids": [
+        "BOOK_METHOD"
+      ]
+    }
+  ],
+  "metrics": [
+    {
+      "name": "7天首次有效盘点率（虚构基线）",
+      "value": 30,
+      "unit": "%",
+      "definition": "有效盘点店铺数除以同队列新注册店铺数；按店铺去重。",
+      "numerator": 24,
+      "denominator": 80,
+      "population": "演示中的新注册店铺队列",
+      "period": "每家店铺自注册起完整7天",
+      "source_ids": [
+        "DEMO_INPUT"
+      ]
+    },
+    {
+      "name": "改动后7天首次有效盘点率",
+      "value": null,
+      "unit": "%",
+      "definition": "沿用演示基线口径，尚无结果。",
+      "numerator": null,
+      "denominator": null,
+      "population": "未来纳入的店铺，范围待确定",
+      "period": "完整7天"
+    }
+  ],
+  "actions": [
+    {
+      "title": "复核首次盘点路径",
+      "owner": "产品负责人（演示安排）",
+      "timeframe": "建议首日开始，实际排期待确认",
+      "scope": "导入、纠错、确认三个环节",
+      "description": "结合事件记录观察新店铺完成任务，区分字段不懂、资料未准备和操作故障。",
+      "success_criterion": "能定位具体障碍及支持证据。",
+      "stop_criterion": "若字段理解不是主要障碍，调整探索方向。",
+      "source_ids": [
+        "BOOK_METHOD"
+      ]
+    },
+    {
+      "title": "试验字段说明与导入预览",
+      "owner": "产品与开发协作（演示安排）",
+      "timeframe": "路径核对后评估工作量",
+      "scope": "有证据支持的导入障碍",
+      "description": "提供准确的字段例子、导入预览和纠错说明；保留原操作能力。",
+      "success_criterion": "用户能理解并完成任务，且没有新增错误盘点；再观察局部主指标。",
+      "stop_criterion": "发生数据错导或错误确认时暂停该改动并排查。",
+      "source_ids": [
+        "BOOK_METHOD"
+      ]
+    },
+    {
+      "title": "回收完整窗口结果并复盘",
+      "owner": "运营或数据负责人（演示安排）",
+      "timeframe": "纳入店铺各满7天后",
+      "scope": "口径可比的新注册店铺",
+      "description": "记录人数、完成事件、同期渠道及其他改动，更新报告。",
+      "success_criterion": "实际结果可以复核，并足以支持下一项决定；增长门槛需提前确定。",
+      "stop_criterion": "口径不可比或窗口未满时不宣称改善。",
+      "source_ids": [
+        "BOOK_METHOD"
+      ]
+    }
+  ],
+  "verification": [
+    {
+      "hypothesis": "减少导入理解障碍有助于完成首次有效盘点。",
+      "method": "先做任务观察；后续有条件再做随机对照。只有前后数据时称前后观察。",
+      "population": "目标店铺，纳入范围待确定",
+      "primary_metric": "7天首次有效盘点率",
+      "guardrails": "错导、错误确认与任务放弃；基线和阈值待补",
+      "sample_plan": null,
+      "duration": "每店完整7天；总体招募周期待定",
+      "decision_rule": "上线前确定继续或停止的门槛。取得可比结果后再决定，不能用计划代替效果。",
+      "risks": "少量反馈的选择偏差、店铺准备程度与同期变化可能影响结果。",
+      "source_ids": [
+        "BOOK_METHOD"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "DEMO_INPUT",
+      "title": "本文专为公开演示编写的虚构业务材料",
+      "type": "user",
+      "url": null,
+      "location": "本报告 facts 字段",
+      "coverage": "full",
+      "note": "不对应真实用户、真实经营结果或原书案例。"
+    },
+    {
+      "id": "BOOK_METHOD",
+      "title": "增长杠杆：探索用户增长的6步法",
+      "type": "book",
+      "url": "https://www.dedao.cn/ebook/detail?id=VEDA2bKO27MKbRardAGJ1N4ln9BLVwgEge5W8ZQyXmYqg5PpkEjxovze6DB84dpj",
+      "location": "第2—4章的六步方法与第6章验证边界",
+      "coverage": "partial",
+      "note": "用于方法组织；正文已读、部分图表未核。演示业务数字不来自本书。"
+    }
+  ],
+  "limitations": [
+    "全部业务信息均为公开演示而虚构，不能直接用于经营决策。",
+    "未知数保持null；没有执行产品改动、用户研究或实验，也未取得增长收益。",
+    "本次只展示资料有限时的局部报告；完整业务北极星、增长模式与阈值尚未确认。"
+  ]
+}
