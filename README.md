@@ -6,7 +6,7 @@
 
 **当前状态：公开预发布，来源整合尚未完成。** 图书第1—7章正文、附录及后记已读；部分图片待核。两个指定微信专辑共10篇独立文章，已读6篇，4篇待补。已完成的质量验证见 [检查说明](docs/quality.md)，准确阅读范围见 [来源目录](skills/user-growth-six-steps/references/source-catalog.json)。
 
-[方法论与贯穿示例](docs/methodology.md) · [读者使用指南](docs/reader-guide.md) · [报告示例](examples/growth-report.html) · [来源与署名](NOTICE.md)
+[方法论与贯穿示例](docs/methodology.md) · [读者使用指南](docs/reader-guide.md) · [整合版HTML手册](docs/reader-handbook.html) · [报告示例](examples/growth-report.html) · [来源与署名](NOTICE.md)
 
 ## 最简单的安装方法
 
