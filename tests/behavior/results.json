@@ -1,0 +1,151 @@
+{
+  "suite_id": "growth-ops-frozen-20261110-v1",
+  "baseline_commit": "b27bec67ae2ace7a94f3b778d47c5ddbc8d5a79f",
+  "candidate_version": "0.2.0",
+  "mapping": {
+    "A": "basic",
+    "B": "old",
+    "C": "new"
+  },
+  "totals_out_of_40": {
+    "basic": 39.0,
+    "old": 40.0,
+    "new": 40.0
+  },
+  "cases": [
+    {
+      "case": "G01",
+      "condition": "basic",
+      "label": "A",
+      "turn_scores": [
+        10
+      ],
+      "case_score": 10.0,
+      "hard_failures": []
+    },
+    {
+      "case": "G01",
+      "condition": "old",
+      "label": "B",
+      "turn_scores": [
+        10
+      ],
+      "case_score": 10.0,
+      "hard_failures": []
+    },
+    {
+      "case": "G01",
+      "condition": "new",
+      "label": "C",
+      "turn_scores": [
+        10
+      ],
+      "case_score": 10.0,
+      "hard_failures": []
+    },
+    {
+      "case": "G02",
+      "condition": "basic",
+      "label": "A",
+      "turn_scores": [
+        9
+      ],
+      "case_score": 9.0,
+      "hard_failures": []
+    },
+    {
+      "case": "G02",
+      "condition": "old",
+      "label": "B",
+      "turn_scores": [
+        10
+      ],
+      "case_score": 10.0,
+      "hard_failures": []
+    },
+    {
+      "case": "G02",
+      "condition": "new",
+      "label": "C",
+      "turn_scores": [
+        10
+      ],
+      "case_score": 10.0,
+      "hard_failures": []
+    },
+    {
+      "case": "G03",
+      "condition": "basic",
+      "label": "A",
+      "turn_scores": [
+        10
+      ],
+      "case_score": 10.0,
+      "hard_failures": []
+    },
+    {
+      "case": "G03",
+      "condition": "old",
+      "label": "B",
+      "turn_scores": [
+        10
+      ],
+      "case_score": 10.0,
+      "hard_failures": []
+    },
+    {
+      "case": "G03",
+      "condition": "new",
+      "label": "C",
+      "turn_scores": [
+        10
+      ],
+      "case_score": 10.0,
+      "hard_failures": []
+    },
+    {
+      "case": "G04",
+      "condition": "basic",
+      "label": "A",
+      "turn_scores": [
+        10,
+        10
+      ],
+      "case_score": 10.0,
+      "hard_failures": []
+    },
+    {
+      "case": "G04",
+      "condition": "old",
+      "label": "B",
+      "turn_scores": [
+        10,
+        10
+      ],
+      "case_score": 10.0,
+      "hard_failures": []
+    },
+    {
+      "case": "G04",
+      "condition": "new",
+      "label": "C",
+      "turn_scores": [
+        10,
+        10
+      ],
+      "case_score": 10.0,
+      "hard_failures": []
+    }
+  ],
+  "candidate_basic_usable": true,
+  "demonstrated_clear_improvement_over_old": false,
+  "demonstrated_clear_improvement_over_basic": false,
+  "reason": "预先要求至少高4分、至少2个案例改善且关键案例不退步；新版与旧版同分，相对无Skill仅高1分。",
+  "notes": [
+    "每条件每例仅一次实际运行，4个主场景共5轮；非真实业务成效或读者研究。",
+    "仅隐藏条件标签，格式和方法引用可能透露是否使用Skill；不称完全盲。",
+    "同父智能体默认模型与推理配置，精确后端版本、温度与预算未暴露；不能把差异严格归因于新增提示词。",
+    "若干生成辅助脚本首次发生编码错误，在相同工具下修复后交付；保留失败记录，不以首次成功率或耗时排名。",
+    "模拟入口描述路由两版本各2/2；描述内容相同，不是原生自动调用测试。"
+  ]
+}

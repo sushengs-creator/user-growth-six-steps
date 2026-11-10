@@ -80,7 +80,7 @@ user-growth-six-steps/
 ### Claude 网页版或支持此入口的 Claude 桌面端
 
 1. 下载上面的单 Skill ZIP，保留 `.zip` 文件用于上传。若浏览器自动解压，请保留原 ZIP，或将解压后的 `user-growth-six-steps` 文件夹重新压缩；不要上传整个仓库源码包。
-2. 个人账号进入 **Settings → Capabilities（设置 → 能力）**，启用 **Code execution and file creation（代码执行与文件创建）**。团队或企业账号如被限制，需要组织管理员在 **Organization settings → Plugins & skills → Policy** 确认代码执行和 Skills 已启用。
+2. 个人账号进入 **Settings → Capabilities（设置 → 能力）**，启用 **Code execution and file creation（代码执行与文件创建）**；新版设置页可能显示为 **Create and edit files**。团队或企业账号如被限制，需要组织管理员在 **Organization settings → Plugins & skills → Policy** 确认代码执行和 Skills 已启用。
 3. 进入 **Customize → Skills → + → Create skill → Upload a skill**，上传这个单 Skill ZIP，然后启用 `user-growth-six-steps`。
 4. 打开新对话，先发送下文的验证口令，再发送你的增长问题。
 
@@ -134,10 +134,35 @@ Cursor 的 **From GitHub Repository** 图形界面入口目前用于带 marketpl
 
 若只能得到 HTML 源码，可以手工保存为 `.html` 后打开；这属于降级交付，应明确与完整 Skill 生成并校验的报告区分。
 
+## 更新与版本确认
+
+当前预发布版为 **0.2.0**。先把自己的 HTML、JSON 和改过的技能文件另存到技能目录之外，再按原安装方式更新**完整包**。报告数据不属于安装包，不需要删掉重做。
+
+| 之前怎样使用 | 这次怎样更新 |
+| --- | --- |
+| 应用内上传 ZIP | 重新[下载当前 Skill ZIP](https://github.com/sushengs-creator/user-growth-six-steps/raw/refs/heads/main/dist/user-growth-six-steps.zip)，使用该应用支持的更新或替换方式；若不支持原位更新，按该应用说明移除旧包后导入 |
+| CLI 或技能管理器安装 | 让原工具更新这个技能；它若只支持重新安装，按原安装流程安装完整新版，保持原来的应用与项目/个人范围 |
+| 手动复制或临时加载 | 下载新版，替换或重新提供整个 `user-growth-six-steps` 文件夹；有个人改动时先比较，避免只替换入口却留着旧参考文件 |
+
+不确定具体步骤时，把这段话发给负责安装的智能体：
+
+```text
+请更新「用户增长6步法」：
+https://github.com/sushengs-creator/user-growth-six-steps
+先找到当前实际加载位置与安装方式，保留我的业务报告和个人修改，再按本应用支持的方式更新完整包。不要只改 SKILL.md。
+更新后实际读取 SKILL.md 的 metadata.version，与仓库版本对照，报告已加载路径、版本和文件生成能力。无法确认的部分请明确说明。
+```
+
+更新后开启新对话，发送：“请实际读取用户增长6步法的 SKILL.md，报告 `metadata.version` 和加载位置，确认是否为仓库当前版本。”本次应读到 `0.2.0`；旧包可能没有版本字段。只复述 README 的版本不能证明更新成功。若读到旧版，检查是否仍进入旧项目、同时装了多份或新会话仍加载旧路径，再按应用自己的刷新方式处理。
+
+**Claude 中自己上传的旧包无法原位替换时：** 先保留旧 ZIP、个人修改和业务报告。在 **Customize → Skills** 点击旧技能进入详情，先关闭启用开关，再点开关旁的 **… → Delete** 并确认；然后按上文“Claude 网页版”步骤上传新版 ZIP、启用并在新对话核对版本。这是个人上传包的重新导入路径，不要求你删除组织统一分发的技能。路径依据2026-11-10核对的[官方管理说明](https://support.claude.com/en/articles/12512180-use-skills-in-claude)，未在用户账号内实际执行删除或上传。
+
+继续工作时附上原 JSON 与新证据即可，旧版报告仍可由新版生成器读取。这里核对的是已加载包的版本标识；完整文件的一致性由维护者的打包检查验证。
+
 ## 换电脑、云端或新会话时
 
 本机安装成功不代表云端环境已经获得文件。云端任务需要使用该产品支持的账号上传、同步机制，或从项目仓库中读取 Skill。临时加载的环境在新会话可能需要重新提供文件；项目安装则要进入同一个项目。每次切换环境，先用上面的验证口令检查，不要只凭旧会话说“安装过”就认定可用。
 
-接口名称和支持范围可能随产品更新。本指南的产品入口与 CLI 行为于 **2026-10-09** 对照以上官方资料核验；这是文档核验，不代表已在每个产品中完成实际运行测试。
+接口名称和支持范围可能随产品更新。本指南的 Claude 网页启用、上传与删除路径于 **2026-11-10** 重查官方说明；其他产品入口沿用 **2026-10-09** 的文档核验，CLI 1.7.1 的本地包安装于2026-11-10复跑。这不代表已在每个产品中完成原生使用测试。
 
 维护者更新技能文件后，在仓库根目录运行 `python3 scripts/package_skill.py` 重新生成安装包；脚本会逐文件核对 ZIP 与源目录一致。

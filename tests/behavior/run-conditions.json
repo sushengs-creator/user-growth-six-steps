@@ -1,0 +1,16 @@
+{
+  "suite": "growth-ops-frozen-20261110-v1",
+  "baseline_commit": "b27bec67ae2ace7a94f3b778d47c5ddbc8d5a79f",
+  "conditions": [
+    "old",
+    "new",
+    "basic"
+  ],
+  "isolation": "Each main case starts a fork_turns=none sub-agent; G04 turn 2 continues same case after turn 1 artifacts. No cross-condition files authorized.",
+  "configuration": "All execution agents inherit the same parent model and reasoning defaults with no override; exact backend revision, temperature and token caps are not exposed and cannot be independently confirmed.",
+  "tools": "Local file read/write and shell; no web, user contacts, other skill packages or delegation.",
+  "knowledge_difference": "Old/new include their respective bundled knowledge references and renderer; basic includes only supplied business evidence and model knowledge. Comparison measures total package conditions, not pure prompt causality.",
+  "replicates": 1,
+  "output": "HTML and JSON per main case turn; actual generated files required; field names unconstrained for fairness.",
+  "constraints": "Synthetic tasks, simulated agents; not real operators, native routing or real business efficacy."
+}

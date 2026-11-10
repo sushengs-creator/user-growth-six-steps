@@ -366,5 +366,20 @@
         "玄学有效性不作为事实；知识星球推广图排除；不递归抓取推荐链接。"
       ]
     }
-  ]
+  ],
+  "latest_access_check": {
+    "date": "2026-11-10",
+    "scope": [
+      "ALBUM_A",
+      "ALBUM_B",
+      "WX-A01",
+      "WX-A02",
+      "WX-A03",
+      "WX-A04"
+    ],
+    "method": "web.run open: original URLs",
+    "result": "cannot be opened (non-retryable error)",
+    "current_album_membership_confirmed": false,
+    "reading_coverage_changed": false
+  }
 }

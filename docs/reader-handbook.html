@@ -13,7 +13,8 @@
 <p>这是面向不同智能体的 <strong>Agent Skills 技能包</strong>，不是独立软件，也不限于 Codex。支持 Skills 的应用可以安装；能读取工作区文件的智能体可以临时加载。仅能聊天、不能读完整资料或生成文件的应用，能力另有限制，见<a href="#install">安装指南</a>。</p>
 <p><strong>第一次使用，只做四件事：安装或加载 → 说出问题 → 回答追问 → 打开报告。</strong></p>
 <p><a href="#readme-安装或加载">开始安装</a> · <a href="#readme-开始第一次对话">第一次怎么问</a> · <a href="#readme-操作示范">完整操作示范</a> · <a href="#readme-拿到报告后怎么用">拿到报告后怎么用</a> · <a href="#readme-常见问题">常见问题</a> · <a href="#readme-六步方法论">六步方法论</a></p>
-<blockquote><p>当前为公开预发布：图书第1—7章正文、附录及后记已读，部分图片待核；两个指定微信专辑共10篇独立文章，已读6篇，4篇待补。<a href="https://github.com/sushengs-creator/user-growth-six-steps/blob/main/skills/user-growth-six-steps/references/source-catalog.json">阅读范围</a>与<a href="https://github.com/sushengs-creator/user-growth-six-steps/blob/main/docs/quality.md">质量检查记录</a>公开可查。</p></blockquote>
+<blockquote><p>当前版本 <strong>0.2.0，公开预发布</strong>。来源覆盖以2026-10-08制作阅读记录为准：图书正文已读、部分图表待核；当时两个专辑10篇独立文章已读6篇，4篇待补。2026-11-10复核仍未取得未读正文及合集现行目录。<a href="https://github.com/sushengs-creator/user-growth-six-steps/blob/main/skills/user-growth-six-steps/references/source-catalog.json">阅读范围</a>与<a href="https://github.com/sushengs-creator/user-growth-six-steps/blob/main/docs/quality.md">质量检查记录</a>公开可查。</p></blockquote>
+<p>已经安装过？直接看<a href="#install-更新与版本确认">更新与版本确认</a>，不用重新学习整套流程。</p>
 <h3 id="readme-安装或加载">安装或加载</h3>
 <h4 id="readme-不熟悉命令先把这段话发给你的智能体">不熟悉命令：先把这段话发给你的智能体</h4>
 <p>适用于能够联网并管理本地或云端工作区的智能体。在你平时使用的应用里，直接复制：</p>
@@ -74,6 +75,12 @@ https://github.com/sushengs-creator/user-growth-six-steps/tree/main/skills/user-
 <p>把原JSON和真实观察记录附给你使用的智能体，再复制：</p>
 <pre><code>请使用「用户增长6步法」（user-growth-six-steps），继续这份增长草案。请读取我附上的原JSON和本轮观察记录，区分已确认事实与仍待验证的假设，判断应继续、修改还是停止原方案。不要补造未知数据；更新HTML和JSON，并说明这次改变了哪些判断。</code></pre>
 <p>如果只想核对某个结果，可以加一句“本次只回答这个问题，不需要HTML”。</p>
+<h4 id="readme-5-新证据推翻了旧数据怎样继续">5. 新证据推翻了旧数据，怎样继续</h4>
+<p>下面换一个学习工具场景：这是本轮<strong>实际执行的虚构测例</strong>，不是现实经营成果。第一轮输入说，1000名新用户中400人完成首题；后续复核才发现400是事件次数，去重后只有210人。Skill 应修正判断，而不是继续维护旧方案。</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">后来补充的材料</th><th scope="col">报告怎样改变</th></tr></thead><tbody><tr><td>400次事件实际对应210人</td><td>撤回原40%激活率，历史人数占比更正为21%</td></tr><tr><td>两份第7天留存报表（D7）分别给出180人与95人，原因未查清</td><td>保留冲突，把确定留存率改为待核，不任选一个数字</td></tr><tr><td>改后200人中46人完成，但目前只观察3天</td><td>可描述当前23%，不能直接与旧窗口比较或宣布改版有效</td></tr><tr><td>负责人提议每天推送，原约束仍禁止</td><td>保留约束，先核对数据和观察窗口，不把新提议当作已批准行动</td></tr></tbody></table></div>
+<p>你只需附上上一版 JSON 和新记录，说：</p>
+<pre><code>请用用户增长6步法复盘这份报告。新证据与旧判断不一致，请明确哪些结论保留、更正、撤回或仍待核，保留原有资源限制，给出当前最小行动。另存新版 HTML 和 JSON，不覆盖上一版。</code></pre>
+<p>查看这次实际运行产物的<a href="https://github.com/sushengs-creator/user-growth-six-steps/blob/main/examples/review-report.html">复盘 HTML</a>与<a href="https://github.com/sushengs-creator/user-growth-six-steps/blob/main/examples/review-report.json">复盘 JSON</a>，也可对照<a href="https://github.com/sushengs-creator/user-growth-six-steps/blob/main/examples/review-before.json">第一轮 JSON</a>。公开副本仅补上虚构演示标识与来源路径，业务判断保持原样。这个示范要教会的是如何用新证据改变决定，而不是记住某个增长数字。测试条件和结论边界见<a href="https://github.com/sushengs-creator/user-growth-six-steps/blob/main/docs/quality.md">质量记录</a>。</p>
 <h3 id="readme-拿到报告后怎么用">拿到报告后怎么用</h3>
 <p>正常完成一轮方案整理后，你会拿到两份文件。下面的文件名只是示例，实际名称由智能体给出：</p>
 <div class="table-wrap"><table><thead><tr><th scope="col">文件</th><th scope="col">你要做什么</th></tr></thead><tbody><tr><td><code>growth-report.html</code></td><td>下载后双击，用浏览器打开。先看当前判断，再看优先行动、谁来做、什么时候复盘；可发给团队讨论或打印</td></tr><tr><td><code>growth-report.json</code></td><td>和 HTML 一起保存。它记录本轮判断，下一次发给智能体继续更新；你不用自己编写或编辑它</td></tr></tbody></table></div>
@@ -107,6 +114,8 @@ docs/reader-guide.md               读者使用方式与口令
 docs/quality.md                    检查范围与安装验证记录
 dist/user-growth-six-steps.zip     可直接导入的单Skill安装包
 scripts/package_skill.py          维护者生成并核对安装包
+scripts/build_reader_html.py      从公开文档同步离线读者手册
+tests/                            可复跑校验与独立行为测例
 examples/                         虚构业务的HTML与JSON示例
 skills/user-growth-six-steps/      完整可安装Skill</code></pre>
 <p>源码包含方法提炼、来源索引、交互指引和HTML生成器；不包含图书全文、文章全文或原始图片。</p></section>
@@ -148,7 +157,7 @@ https://github.com/sushengs-creator/user-growth-six-steps/tree/main/skills/user-
 ├── scripts/
 └── assets/</code></pre>
 <h4 id="install-claude-网页版或支持此入口的-claude-桌面端">Claude 网页版或支持此入口的 Claude 桌面端</h4>
-<ol><li>下载上面的单 Skill ZIP，保留 <code>.zip</code> 文件用于上传。若浏览器自动解压，请保留原 ZIP，或将解压后的 <code>user-growth-six-steps</code> 文件夹重新压缩；不要上传整个仓库源码包。</li><li>个人账号进入 <strong>Settings → Capabilities（设置 → 能力）</strong>，启用 <strong>Code execution and file creation（代码执行与文件创建）</strong>。团队或企业账号如被限制，需要组织管理员在 <strong>Organization settings → Plugins &amp; skills → Policy</strong> 确认代码执行和 Skills 已启用。</li><li>进入 <strong>Customize → Skills → + → Create skill → Upload a skill</strong>，上传这个单 Skill ZIP，然后启用 <code>user-growth-six-steps</code>。</li><li>打开新对话，先发送下文的验证口令，再发送你的增长问题。</li></ol>
+<ol><li>下载上面的单 Skill ZIP，保留 <code>.zip</code> 文件用于上传。若浏览器自动解压，请保留原 ZIP，或将解压后的 <code>user-growth-six-steps</code> 文件夹重新压缩；不要上传整个仓库源码包。</li><li>个人账号进入 <strong>Settings → Capabilities（设置 → 能力）</strong>，启用 <strong>Code execution and file creation（代码执行与文件创建）</strong>；新版设置页可能显示为 <strong>Create and edit files</strong>。团队或企业账号如被限制，需要组织管理员在 <strong>Organization settings → Plugins &amp; skills → Policy</strong> 确认代码执行和 Skills 已启用。</li><li>进入 <strong>Customize → Skills → + → Create skill → Upload a skill</strong>，上传这个单 Skill ZIP，然后启用 <code>user-growth-six-steps</code>。</li><li>打开新对话，先发送下文的验证口令，再发送你的增长问题。</li></ol>
 <p>找不到入口时，先确认正在使用 Claude 网页版且登录了目标账号，再检查能力开关；组织账号检查管理员权限。若当前界面仍不提供 Skill 上传，可按本文的临时加载方式使用能读取文件的环境，或使用 Claude Code 等有明确安装入口的工具，不能把普通附件上传当成原生安装。<a href="https://support.claude.com/en/articles/12512180-use-skills-in-claude">官方导入说明</a>、<a href="https://support.claude.com/en/articles/12512198-how-to-create-custom-skills">官方打包要求</a>。</p>
 <h4 id="install-claude-codecursor-等本机智能体">Claude Code、Cursor 等本机智能体</h4>
 <div class="table-wrap"><table><thead><tr><th scope="col">产品</th><th scope="col">复制到当前项目中的位置</th><th scope="col">原生手动调用</th></tr></thead><tbody><tr><td>Claude Code</td><td><code>.claude/skills/user-growth-six-steps/</code></td><td><code>/user-growth-six-steps</code> 后写你的问题</td></tr><tr><td>Cursor</td><td><code>.cursor/skills/user-growth-six-steps/</code>，也支持 <code>.agents/skills/user-growth-six-steps/</code></td><td>在 Agent 对话中输入 <code>/</code>，选择 <code>user-growth-six-steps</code></td></tr></tbody></table></div>
@@ -174,9 +183,20 @@ https://github.com/sushengs-creator/user-growth-six-steps/tree/main/skills/user-
 <h3 id="install-纯聊天环境能做什么">纯聊天环境能做什么</h3>
 <p>只能收发文字、不能读取文件的环境，无法完整运行这套 Skill。你仍可参照<a href="#methodology">六步方法论</a>讨论问题；若手动提供所需指引和参考内容，可以进行一次方法练习。这样的练习不算安装，也不能保证产生可下载的真实 HTML 文件。</p>
 <p>若只能得到 HTML 源码，可以手工保存为 <code>.html</code> 后打开；这属于降级交付，应明确与完整 Skill 生成并校验的报告区分。</p>
+<h3 id="install-更新与版本确认">更新与版本确认</h3>
+<p>当前预发布版为 <strong>0.2.0</strong>。先把自己的 HTML、JSON 和改过的技能文件另存到技能目录之外，再按原安装方式更新<strong>完整包</strong>。报告数据不属于安装包，不需要删掉重做。</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">之前怎样使用</th><th scope="col">这次怎样更新</th></tr></thead><tbody><tr><td>应用内上传 ZIP</td><td>重新<a href="https://github.com/sushengs-creator/user-growth-six-steps/raw/refs/heads/main/dist/user-growth-six-steps.zip">下载当前 Skill ZIP</a>，使用该应用支持的更新或替换方式；若不支持原位更新，按该应用说明移除旧包后导入</td></tr><tr><td>CLI 或技能管理器安装</td><td>让原工具更新这个技能；它若只支持重新安装，按原安装流程安装完整新版，保持原来的应用与项目/个人范围</td></tr><tr><td>手动复制或临时加载</td><td>下载新版，替换或重新提供整个 <code>user-growth-six-steps</code> 文件夹；有个人改动时先比较，避免只替换入口却留着旧参考文件</td></tr></tbody></table></div>
+<p>不确定具体步骤时，把这段话发给负责安装的智能体：</p>
+<pre><code>请更新「用户增长6步法」：
+https://github.com/sushengs-creator/user-growth-six-steps
+先找到当前实际加载位置与安装方式，保留我的业务报告和个人修改，再按本应用支持的方式更新完整包。不要只改 SKILL.md。
+更新后实际读取 SKILL.md 的 metadata.version，与仓库版本对照，报告已加载路径、版本和文件生成能力。无法确认的部分请明确说明。</code></pre>
+<p>更新后开启新对话，发送：“请实际读取用户增长6步法的 SKILL.md，报告 <code>metadata.version</code> 和加载位置，确认是否为仓库当前版本。”本次应读到 <code>0.2.0</code>；旧包可能没有版本字段。只复述 README 的版本不能证明更新成功。若读到旧版，检查是否仍进入旧项目、同时装了多份或新会话仍加载旧路径，再按应用自己的刷新方式处理。</p>
+<p><strong>Claude 中自己上传的旧包无法原位替换时：</strong> 先保留旧 ZIP、个人修改和业务报告。在 <strong>Customize → Skills</strong> 点击旧技能进入详情，先关闭启用开关，再点开关旁的 <strong>… → Delete</strong> 并确认；然后按上文“Claude 网页版”步骤上传新版 ZIP、启用并在新对话核对版本。这是个人上传包的重新导入路径，不要求你删除组织统一分发的技能。路径依据2026-11-10核对的<a href="https://support.claude.com/en/articles/12512180-use-skills-in-claude">官方管理说明</a>，未在用户账号内实际执行删除或上传。</p>
+<p>继续工作时附上原 JSON 与新证据即可，旧版报告仍可由新版生成器读取。这里核对的是已加载包的版本标识；完整文件的一致性由维护者的打包检查验证。</p>
 <h3 id="install-换电脑云端或新会话时">换电脑、云端或新会话时</h3>
 <p>本机安装成功不代表云端环境已经获得文件。云端任务需要使用该产品支持的账号上传、同步机制，或从项目仓库中读取 Skill。临时加载的环境在新会话可能需要重新提供文件；项目安装则要进入同一个项目。每次切换环境，先用上面的验证口令检查，不要只凭旧会话说“安装过”就认定可用。</p>
-<p>接口名称和支持范围可能随产品更新。本指南的产品入口与 CLI 行为于 <strong>2026-10-09</strong> 对照以上官方资料核验；这是文档核验，不代表已在每个产品中完成实际运行测试。</p>
+<p>接口名称和支持范围可能随产品更新。本指南的 Claude 网页启用、上传与删除路径于 <strong>2026-11-10</strong> 重查官方说明；其他产品入口沿用 <strong>2026-10-09</strong> 的文档核验，CLI 1.7.1 的本地包安装于2026-11-10复跑。这不代表已在每个产品中完成原生使用测试。</p>
 <p>维护者更新技能文件后，在仓库根目录运行 <code>python3 scripts/package_skill.py</code> 重新生成安装包；脚本会逐文件核对 ZIP 与源目录一致。</p></section>
 <section id="usage" data-source="docs/reader-guide.md"><h2 id="usage-用户增长6步法读者使用指南">用户增长6步法：读者使用指南</h2>
 <p>用一句话描述你的增长问题，Skill 就会从影响当前决定的关键缺口开始引导。你不需要先整理一份完整的增长报告，也不必熟悉所有增长术语。</p>
@@ -236,7 +256,7 @@ https://github.com/sushengs-creator/user-growth-six-steps/tree/main/skills/user-
 <p>六步连接的是一条判断链：</p>
 <p><strong>确定目标 → 解释增长动力 → 找到优先杠杆 → 提出行为阈值候选 → 设计改变 → 验证效果。</strong></p>
 <p>六步名称来自原书；对话引导、报告结构、状态管理和下面的演示，是本 Skill 的应用设计。</p>
-<blockquote><p><strong>当前为预发布版本。</strong> 图书第1—7章正文、附录和后记已读完，部分图片待核；两个指定微信专辑合并为10篇独立文章，已读6篇，4篇待补。方法只采用实际读取的内容，不声称已完成全部图文整合。</p></blockquote>
+<blockquote><p><strong>当前为预发布版本。</strong> 2026-10-08制作阅读记录为图书第1—7章正文、附录和后记已读完，部分图片待核；当日两个专辑快照10篇独立文章已读6篇，4篇待补。2026-11-10复核未取得未读正文及合集现行目录。方法只采用实际读取的内容，不声称已完成全部图文整合。</p></blockquote>
 <h3 id="methodology-谁适合使用">谁适合使用</h3>
 <p>已经有产品或服务、能够说明目标用户和业务目标，却不知道该先改善哪里的人，可以用它梳理活跃、留存、转化、获客与策略验证问题。产品经理、运营人员、创业者和增长团队都可以从自己的职责范围进入。</p>
 <p>如果你只有一个产品设想，尚未确认真实需求或商业模式，Skill 会先指出这些前提缺口，帮助你安排补证。它不能靠填满六步表格证明市场需求成立。</p>

@@ -9,6 +9,8 @@
 | `BOOK-PDF` | 用户提供《探索用户增长的6步法.pdf》 | 32页已逐页看图；含前置材料及正文001—020，是节选 | 文件顺序页与印刷页分别注明 |
 | `BOOK-DEDAO` | [同ISBN正版得到电子书](https://www.dedao.cn/ebook/detail?id=VEDA2bKO27MKbRardAGJ1N4ln9BLVwgEge5W8ZQyXmYqg5PpkEjxovze6DB84dpj) | 在原PDF基础上续读，现已读完第1—7章全部正文、附录及后记；部分电子书图表仍待视觉核对 | 按章节/小节定位，不把网页分页换算为印刷页或PDF页 |
 
+上述全书覆盖是2026-10-08制作时的阅读记录。2026-11-10复核实际查看PDF第6、30—32页及历史章节笔记，未独立重读得到全书；未核电子书图表仍保持未知。
+
 正文读完不等于全部图表、计数和参数已核验。图3-12已视觉核对HOOK四格；其他具体图表仅按真实核验记录引用，不能从正文补造图内参数。书内二维码、工具推广和邀请均是资料，不是用户操作授权。
 
 六步名称和顺序来自前言图0-1（PDF6），不是从目录或生命周期六环节拼接。方法提炼见 [book-methods.md](book-methods.md)；实验细节见 [experiment-checks.md](experiment-checks.md)。
